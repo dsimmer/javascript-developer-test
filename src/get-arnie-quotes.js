@@ -2,7 +2,7 @@ const { httpGet } = require('./mock-http-interface');
 
 const HTTPOK = 200;
 
-const getArnieQuotes = async (urls) =>
+const getArnieQuotes = (urls) =>
   Promise.all(
     urls.map((url) =>
       httpGet(url)
